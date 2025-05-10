@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Experience</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Shto disa stile të personalizuara për përputhje të plotë */
+    .bg-brown {
+      background-color: #6b4226; /* Ngjyra kafe */
+    }
+    .text-gold {
+      color: #d4af37; /* Ngjyra ari */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Top Bar -->
+  <div class="bg-brown text-white text-sm py-2">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <p>Mon - Fri: 9:00 - 19:00 / Closed on Weekends</p>
+      <p>+91 705 210-1786</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="bg-black">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-white font-bold text-xl">RioRelax</div>
+      <!-- Menu -->
+      <ul class="flex space-x-6 text-white">
+        <li><a href="#" class="hover:text-gold">Home</a></li>
+        <li><a href="#" class="hover:text-gold">About</a></li>
+        <li><a href="#" class="hover:text-gold">Our Rooms</a></li>
+        <li><a href="#" class="hover:text-gold">Facilities</a></li>
+        <li><a href="#" class="hover:text-gold">Pages</a></li>
+        <li><a href="#" class="hover:text-gold">Blog</a></li>
+        <li><a href="#" class="hover:text-gold">Contact</a></li>
+      </ul>
+      <!-- Reservation Button -->
+      <a href="#" class="bg-white text-brown font-semibold px-4 py-2 rounded hover:bg-gray-100">Reservation</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center" style="background-image: url('img/pexels-enginakyurt-1579253.jpg'); height: 80vh;">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 flex items-center justify-between h-full">
+      <!-- Left Text -->
+      <div class="text-white">
+        <h1 class="text-5xl font-bold mb-4">Enjoy A Luxury Experience</h1>
+        <p class="mb-6">Donec vitae libero non enim placerat eleifend aliquam erat volutpat.</p>
+        <a href="#" class="bg-brown  text-brown font-semibold px-6 py-3 rounded hover:bg-gray-300">Visit Our Shop</a>
+      </div>
+      <!-- Booking Form -->
+      <div class="bg-white shadow-lg rounded-lg p-6 w-96">
+        <h2 class="text-2xl font-bold mb-4">Book A Room</h2>
+        <form class="space-y-4">
+          <!-- Check-In Date -->
+          <div>
+            <label for="check-in" class="block text-sm font-medium text-gray-700">Check In Date</label>
+            <input type="date" id="check-in" class="mt-1 block w-full p-2 border rounded-md">
+          </div>
+          <!-- Check-Out Date -->
+          <div>
+            <label for="check-out" class="block text-sm font-medium text-gray-700">Check Out Date</label>
+            <input type="date" id="check-out" class="mt-1 block w-full p-2 border rounded-md">
+          </div>
+          <!-- Adults -->
+          <div>
+            <label for="adults" class="block text-sm font-medium text-gray-700">Adults</label>
+            <input type="number" id="adults" class="mt-1 block w-full p-2 border rounded-md" min="1" value="1">
+          </div>
+          <!-- Children -->
+          <div>
+            <label for="children" class="block text-sm font-medium text-gray-700">Child</label>
+            <input type="number" id="children" class="mt-1 block w-full p-2 border rounded-md" min="0" value="0">
+          </div>
+          <!-- Rooms -->
+          <div>
+            <label for="rooms" class="block text-sm font-medium text-gray-700">Room</label>
+            <input type="number" id="rooms" class="mt-1 block w-full p-2 border rounded-md" min="1" value="1">
+          </div>
+          <!-- Submit Button -->
+          <div>
+            <button type="submit" class="w-full bg-brown text-white font-bold py-2 rounded hover:bg-brown-800">
+              Check Availability
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+ 
+
+   <!-- About Section -->
+   <section class="max-w-7xl mt-10 mx-auto px-4 py-12 flex items-center">
+    <!-- Left Images -->
+    <div class="relative w-1/2">
+      <!-- Background Image -->
+      <div class="absolute top-0 left-0 w-3/4 h-64 bg-cover bg-center rounded-lg shadow-md" style="background-image: url('img/pexels-pixabay-164595.jpg');"></div>
+      <!-- Foreground Image -->
+      <div class="absolute bottom-0 left-16 w-3/4 h-64 bg-cover bg-center rounded-lg shadow-md border-4 border-white" style="background-image: url('img/pexels-pixabay-460537.jpg');"></div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="w-1/2 pl-16">
+      <h3 class="text-sm font-bold text-gray-500 uppercase mb-2">About Us</h3>
+      <h2 class="text-4xl font-bold text-gray-800 leading-tight mb-4">Most Safe & Rated Hotel In London.</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Morbi tortor urna, placerat vel arcu quis, fringilla egestas neque. Morbi sit amet porta erat, quis rutrum risus. Vivamus et gravida nibh, quis posuere felis.
+      </p>
+      <ul class="space-y-4 mb-6">
+        <li class="flex items-start">
+          <span class="text-brown-600 text-lg font-semibold mr-2">✔</span>
+          <p>24 Month / 24,000km Nationwide Warranty monotone</p>
+        </li>
+        <li class="flex items-start">
+          <span class="text-brown-600 text-lg font-semibold mr-2">✔</span>
+          <p>Curabitur dapibus nisi at urna congue, in pharetra urna accumsan.</p>
+        </li>
+        <li class="flex items-start">
+          <span class="text-brown-600 text-lg font-semibold mr-2">✔</span>
+          <p>Customer Rewards Program and excellent technology</p>
+        </li>
+      </ul>
+      <a href="#" class="bg-brown-700 text-white font-semibold px-6 py-3 rounded hover:bg-brown-600">Discover More</a>
+    </div>
+  </section>
+
+
+  <!-- Section Explore The Hotel -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <!-- Title -->
+      <h3 class="text-sm font-bold text-gray-500 uppercase mb-2">Explore</h3>
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">The Hotel</h2>
+      <p class="text-gray-600 mb-10">
+        Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra, 
+        sed interdum metus interdum. Cras lobortis pulvinar dolor.
+      </p>
+      
+      <!-- Grid Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-left">
+          <div class="text-4xl text-brown-500 mb-4">🛏️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Quality Room</h3>
+          <p class="text-gray-600 mb-4">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.</p>
+          <a href="#" class="text-brown-600 font-semibold hover:underline">Read More →</a>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-left">
+          <div class="text-4xl text-brown-500 mb-4">🏖️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Privet Beach</h3>
+          <p class="text-gray-600 mb-4">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.</p>
+          <a href="#" class="text-brown-600 font-semibold hover:underline">Read More →</a>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-left">
+          <div class="text-4xl text-brown-500 mb-4">🏨</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Best Accommodation</h3>
+          <p class="text-gray-600 mb-4">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.</p>
+          <a href="#" class="text-brown-600 font-semibold hover:underline">Read More →</a>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-left">
+          <div class="text-4xl text-brown-500 mb-4">💆‍♀️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Wellness & Spa</h3>
+          <p class="text-gray-600 mb-4">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.</p>
+          <a href="#" class="text-brown-600 font-semibold hover:underline">Read More →</a>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-left">
+          <div class="text-4xl text-brown-500 mb-4">🍹</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Restaurants & Bars</h3>
+          <p class="text-gray-600 mb-4">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.</p>
+          <a href="#" class="text-brown-600 font-semibold hover:underline">Read More →</a>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-left">
+          <div class="text-4xl text-brown-500 mb-4">🎁</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Special Offers</h3>
+          <p class="text-gray-600 mb-4">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.</p>
+          <a href="#" class="text-brown-600 font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Rooms & Suites -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <!-- Title -->
+      <h3 class="text-sm font-bold text-gray-500 uppercase mb-2">The Pleasure Of Luxury</h3>
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Rooms & Suites</h2>
+      <p class="text-gray-600 mb-10">
+        Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra, 
+        sed interdum metus interdum.
+      </p>
+      
+      <!-- Grid Section -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/1.jpg" alt="Room 1" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-brown-600 text-white px-4 py-2 text-sm font-semibold rounded">$600/Night</span>
+              <button class="bg-brown-600 text-white px-4 py-2 text-sm font-semibold rounded hover:bg-brown-500">Book Now</button>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">ClassNameic Balcony Room</h3>
+            <p class="text-gray-600 mb-4">Aenean vehicula ligula eu rhoncus porttitor. Duis vel lacus quam.</p>
+            <div class="flex items-center space-x-4 text-gray-500">
+              <i class="fas fa-wifi"></i>
+              <i class="fas fa-tv"></i>
+              <i class="fas fa-coffee"></i>
+              <i class="fas fa-shower"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/2.jpg" alt="Room 2" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-brown-600 text-white px-4 py-2 text-sm font-semibold rounded">$400/Night</span>
+              <button class="bg-brown-600 text-white px-4 py-2 text-sm font-semibold rounded hover:bg-brown-500">Book Now</button>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Superior Double Room</h3>
+            <p class="text-gray-600 mb-4">Aenean vehicula ligula eu rhoncus porttitor. Duis vel lacus quam.</p>
+            <div class="flex items-center space-x-4 text-gray-500">
+              <i class="fas fa-wifi"></i>
+              <i class="fas fa-tv"></i>
+              <i class="fas fa-coffee"></i>
+              <i class="fas fa-shower"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/3.jpg" alt="Room 3" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-brown-600 text-white px-4 py-2 text-sm font-semibold rounded">$100/Night</span>
+              <button class="bg-brown-600 text-white px-4 py-2 text-sm font-semibold rounded hover:bg-brown-500">Book Now</button>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Super Balcony Double Room</h3>
+            <p class="text-gray-600 mb-4">Aenean vehicula ligula eu rhoncus porttitor. Duis vel lacus quam.</p>
+            <div class="flex items-center space-x-4 text-gray-500">
+              <i class="fas fa-wifi"></i>
+              <i class="fas fa-tv"></i>
+              <i class="fas fa-coffee"></i>
+              <i class="fas fa-shower"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Section Pearl Of The Adriatic -->
+    <section class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center">
+      <!-- Left Image -->
+      <div class="w-full md:w-1/2">
+        <img src="img/pexels-enginakyurt-2725675.jpg" alt="Luxury Room" class="rounded-lg shadow-lg">
+      </div>
+  
+      <!-- Right Content -->
+      <div class="w-full md:w-1/2 md:pl-12 mt-8 md:mt-0">
+        <h3 class="text-sm font-bold text-gray-500 uppercase mb-2">Luxury Hotel & Resort</h3>
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Pearl Of The Adriatic.</h2>
+        <p class="text-gray-600 mb-4">
+          Vestibulum non ornare nunc. Maecenas a metus in est iaculis pretium. Aliquam ullamcorper nibh lacus, 
+          ac suscipit purus consequat porttitor.
+        </p>
+        <p class="text-gray-600 mb-6">
+          Cras finibus laoreet felis at hendrerit. Integer ligula lorem, finibus vitae lorem at, egestas 
+          consectetur urna. Integer id ultricies elit. Maecenas sodales nibh.
+        </p>
+        <a href="#" class="bg-brown-700 text-white font-semibold px-6 py-3 rounded hover:bg-brown-600">Discover More</a>
+      </div>
+    </section>
+
+      <!-- Section Extra Services -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <!-- Left Content -->
+        <div>
+          <h3 class="text-sm font-bold text-gray-500 uppercase mb-2">Best Prices</h3>
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">Extra Services</h2>
+          <p class="text-gray-600 mb-6">
+            Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra, sed interdum metus interdum. 
+          </p>
+          <p class="text-gray-600">
+            Cras finibus laoreet felis at hendrerit. Integer ligula lorem, finibus vitae lorem at, egestas consectetur urna.
+          </p>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-left">
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold text-gray-800">Room cleaning</h3>
+            <p class="text-gray-500 text-sm">Perfect for early-stage startups</p>
+          </div>
+          <div class="flex items-baseline mb-4">
+            <span class="text-4xl font-bold text-gray-800">$39.99</span>
+          </div>
+          <ul class="space-y-2 mb-6 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-green-600 font-bold mr-2">✔</span> Hotel quis justo at lorem
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 font-bold mr-2">✔</span> Fusce sodales, urna et tempus
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 font-bold mr-2">✔</span> Vestibulum blandit lorem quis
+            </li>
+          </ul>
+          <button class="w-full bg-brown-700 text-white font-semibold py-2 rounded hover:bg-brown-600">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-left">
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold text-gray-800">Drinks included</h3>
+            <p class="text-gray-500 text-sm">Perfect for early-stage startups</p>
+          </div>
+          <div class="flex items-baseline mb-4">
+            <span class="text-4xl font-bold text-gray-800">$59.99</span>
+          </div>
+          <ul class="space-y-2 mb-6 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-green-600 font-bold mr-2">✔</span> Hotel quis justo at lorem
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 font-bold mr-2">✔</span> Fusce sodales, urna et tempus
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 font-bold mr-2">✔</span> Vestibulum blandit lorem quis
+            </li>
+          </ul>
+          <button class="w-full bg-brown-700 text-white font-semibold py-2 rounded hover:bg-brown-600">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <!-- Title -->
+      <h3 class="text-sm font-bold text-gray-500 uppercase mb-2">Testimonial</h3>
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+      <p class="text-gray-600 mb-10">
+        Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra, sed interdum metus interdum.
+      </p>
+
+      <!-- Testimonial Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <img src="img/c1.jpg" alt="Client Image" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="text-lg font-bold text-gray-800">Braifly Dcosta</h4>
+              <p class="text-gray-500 text-sm">Client</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <!-- Star Ratings -->
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg">★</span>
+          </div>
+          <p class="text-gray-600">
+            "Phasellus aliquam quis lorem amet dapibus feugiat vitae purus vitae efficitur. Vestibulum sed elit id orci rhoncus ultricies."
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <img src="img/c2.jpg" alt="Client Image" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="text-lg font-bold text-gray-800">Roboto Dose</h4>
+              <p class="text-gray-500 text-sm">Client</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <!-- Star Ratings -->
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg">★</span>
+          </div>
+          <p class="text-gray-600">
+            "Phasellus aliquam quis lorem amet dapibus feugiat vitae purus vitae efficitur. Vestibulum sed elit id orci rhoncus ultricies."
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <img src="img/c3.jpg" alt="Client Image" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="text-lg font-bold text-gray-800">Braifly Dcosta</h4>
+              <p class="text-gray-500 text-sm">Client</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <!-- Star Ratings -->
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg mr-1">★</span>
+            <span class="text-yellow-500 text-lg">★</span>
+          </div>
+          <p class="text-gray-600">
+            "Phasellus aliquam quis lorem amet dapibus feugiat vitae purus vitae efficitur. Vestibulum sed elit id orci rhoncus ultricies."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Book A Room Section -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start">
+      <!-- Form Section -->
+      <div class="w-full md:w-1/2 bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-sm font-bold text-gray-500 uppercase mb-2">Make Appointment</h3>
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">Book A Room</h2>
+        <form class="space-y-4">
+          <!-- Check In Date -->
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="check-in" class="block text-sm font-medium text-gray-700">Check In Date</label>
+              <input type="date" id="check-in" class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <div>
+              <label for="check-out" class="block text-sm font-medium text-gray-700">Check Out Date</label>
+              <input type="date" id="check-out" class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+          </div>
+          <!-- Adults and Room -->
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="adults" class="block text-sm font-medium text-gray-700">Adults</label>
+              <select id="adults" class="mt-1 block w-full p-2 border rounded-md">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div>
+              <label for="room" class="block text-sm font-medium text-gray-700">Room</label>
+              <select id="room" class="mt-1 block w-full p-2 border rounded-md">
+                <option>Single</option>
+                <option>Double</option>
+                <option>Suite</option>
+              </select>
+            </div>
+          </div>
+          <!-- Submit Button -->
+           <!-- Submit -->
+      <div>
+        <button type="submit" class="bg-brown text-white font-bold px-6 py-2 rounded hover:bg-brown-800">
+          Check Availability
+        </button>
+      </div>
+        </form>
+      </div>
+
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
+        <img src="img/book.jpg" alt="Room Image" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Take A Tour Section -->
+  <section class="relative h-80 bg-cover bg-center" style="background-image: url('img/pexels-cottonbro-6466289.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+      <!-- Play Button -->
+      <button class="bg-brown text-brown-700 p-4 rounded-full shadow-lg hover:bg-gray-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-4.586-2.68a1 1 0 00-1.48.874v5.344a1 1 0 001.48.874l4.586-2.68a1 1 0 000-1.748z" />
+        </svg>
+      </button>
+      <!-- Title -->
+      <h2 class="mt-4 text-2xl font-bold">Take A Tour Of Luxuri</h2>
+    </div>
+  </section>
+
+
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-sm font-semibold text-gray-500 uppercase">Our Blog</h2>
+      <h3 class="text-4xl font-bold text-gray-800 mt-2">Latest Blog & News</h3>
+      <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+        Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra, sed interdum metus interdum.
+      </p>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Blog Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/blog1.jpg" alt="Coffee Preparation" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <p class="text-sm text-gray-400">24th March 2022</p>
+            <h4 class="text-lg font-semibold text-gray-800 mt-2">
+              Cras accumsan nulla nec lacus ultricies placerat.
+            </h4>
+            <p class="text-gray-600 mt-2">
+              Curabitur sagittis libero tincidunt tempor finibus.
+            </p>
+            <a href="#" class="text-blue-500 font-bold hover:underline mt-4 inline-block">
+              Read More
+            </a>
+          </div>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/b2.jpg" alt="Woman at Cafe" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <p class="text-sm text-gray-400">24th March 2022</p>
+            <h4 class="text-lg font-semibold text-gray-800 mt-2">
+              Dras accumsan nulla nec lacus ultricies placerat.
+            </h4>
+            <p class="text-gray-600 mt-2">
+              Curabitur sagittis libero tincidunt tempor finibus.
+            </p>
+            <a href="#" class="text-blue-500 font-bold hover:underline mt-4 inline-block">
+              Read More
+            </a>
+          </div>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/b3.jpg" alt="Cup of Coffee" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <p class="text-sm text-gray-400">24th March 2022</p>
+            <h4 class="text-lg font-semibold text-gray-800 mt-2">
+              Seas accumsan nulla nec lacus ultricies placerat.
+            </h4>
+            <p class="text-gray-600 mt-2">
+              Curabitur sagittis libero tincidunt tempor finibus.
+            </p>
+            <a href="#" class="text-blue-500 font-bold hover:underline mt-4 inline-block">
+              Read More
+            </a>
+          </div>
+        </div>
+            <!-- Blog Card 4 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+              <img src="img/b4.jpg" alt="Cup of Coffee" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <p class="text-sm text-gray-400">24th March 2022</p>
+                <h4 class="text-lg font-semibold text-gray-800 mt-2">
+                  Seas accumsan nulla nec lacus ultricies placerat.
+                </h4>
+                <p class="text-gray-600 mt-2">
+                  Curabitur sagittis libero tincidunt tempor finibus.
+                </p>
+                <a href="#" class="text-blue-500 font-bold hover:underline mt-4 inline-block">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+    <!-- Blog Card 5 -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="img/b5.jpg" alt="Cup of Coffee" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <p class="text-sm text-gray-400">24th March 2022</p>
+        <h4 class="text-lg font-semibold text-gray-800 mt-2">
+          Seas accumsan nulla nec lacus ultricies placerat.
+        </h4>
+        <p class="text-gray-600 mt-2">
+          Curabitur sagittis libero tincidunt tempor finibus.
+        </p>
+        <a href="#" class="text-blue-500 font-bold hover:underline mt-4 inline-block">
+          Read More
+        </a>
+      </div>
+    </div>
+
+        <!-- Blog Card 6 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/b6.jpg" alt="Cup of Coffee" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <p class="text-sm text-gray-400">24th March 2022</p>
+            <h4 class="text-lg font-semibold text-gray-800 mt-2">
+              Seas accumsan nulla nec lacus ultricies placerat.
+            </h4>
+            <p class="text-gray-600 mt-2">
+              Curabitur sagittis libero tincidunt tempor finibus.
+            </p>
+            <a href="#" class="text-blue-500 font-bold hover:underline mt-4 inline-block">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+  
+ <!-- Footer Section -->
+ <footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">RioRelax</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center">
+          <span class="mr-2">📞</span>
+          <span>1800-121-3637<br>+91 705-210-1786</span>
+        </li>
+        <li class="flex items-center">
+          <span class="mr-2">📧</span>
+          <span>info@example.com<br>help@example.com</span>
+        </li>
+        <li class="flex items-center">
+          <span class="mr-2">📍</span>
+          <span>124/7 Plot No. 39, 15th Phase,<br>LHB Colony, Kanpur</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Links -->
+    <div>
+      <h3 class="text-lg font-bold mb-4">Our Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-gray-400">Home</a></li>
+        <li><a href="#" class="hover:text-gray-400">About Us</a></li>
+        <li><a href="#" class="hover:text-gray-400">Services</a></li>
+        <li><a href="#" class="hover:text-gray-400">Contact Us</a></li>
+        <li><a href="#" class="hover:text-gray-400">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-lg font-bold mb-4">Our Services</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-gray-400">FAQ</a></li>
+        <li><a href="#" class="hover:text-gray-400">Support</a></li>
+        <li><a href="#" class="hover:text-gray-400">Privacy</a></li>
+        <li><a href="#" class="hover:text-gray-400">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-lg font-bold mb-4">Subscribe To Our Newsletter</h3>
+      <p class="text-gray-400 mb-4">Subscribe our newsletter to get our latest update & News</p>
+      <div class="relative">
+        <input type="email" placeholder="Your Email..." class="w-full p-2 border rounded-md text-gray-800">
+        <button class="absolute top-1/2 transform -translate-y-1/2 right-2 bg-brown-700 text-white px-4 py-2 rounded hover:bg-brown-600">
+          ➤
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-12 border-t border-gray-700 pt-6 text-center">
+    <p class="text-sm text-gray-400">&copy; 2022 Riorelax. All rights reserved.</p>
+    <p class="text-sm text-gray-400">www.DownloadNewThemes.com</p>
+    <div class="mt-4 flex justify-center space-x-4">
+      <a href="#" class="text-gray-400 hover:text-white">🐦</a>
+      <a href="#" class="text-gray-400 hover:text-white">📘</a>
+      <a href="#" class="text-gray-400 hover:text-white">📸</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
